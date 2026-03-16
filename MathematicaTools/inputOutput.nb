@@ -1,0 +1,137 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      4550,        129]
+NotebookOptionsPosition[      4189,        115]
+NotebookOutlinePosition[      4593,        131]
+CellTagsIndexPosition[      4550,        128]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Standard", " ", "shortcut"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"mf", "=", "MatrixForm"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Directory", " ", "containing", " ", "text", " ", "files", " ", "of", " ",
+      "packings"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"packingsDirectory", "=", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{
+       RowBox[{"ParentDirectory", "[", 
+        RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+       ",", "\"\<Packings\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Set", " ", "as", " ", "present", " ", "working", " ", "directory"}], " ",
+     "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SetDirectory", "[", "packingsDirectory", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Function", " ", "to", " ", "import", " ", "Game", " ", "of", " ", 
+     "Sloanes", " ", "formatted", " ", "text", " ", "file", " ", "of", " ", 
+     "packing"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Imports", " ", "at", " ", "precision"}], "=", 
+     RowBox[{
+     "15", " ", "unless", " ", "precision", " ", "is", " ", "specified"}]}], 
+    " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Returns", " ", "transpose", " ", "of", " ", "short"}], ",", " ", 
+     RowBox[{"fat", " ", "matrix"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"importPacking", "[", 
+      RowBox[{"d_", ",", "n_", ",", "filename_", ",", "precision_"}], "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", "plist", "}"}], ",", 
+       RowBox[{
+        RowBox[{"plist", "=", 
+         RowBox[{"SetPrecision", "[", 
+          RowBox[{
+           RowBox[{"Import", "[", 
+            RowBox[{"filename", ",", "\"\<List\>\""}], "]"}], ",", 
+           "precision"}], "]"}]}], ";", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"plist", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{"d", " ", 
+               RowBox[{"(", 
+                RowBox[{"i", "-", "1"}], ")"}]}], "+", "j"}], "]"}], "]"}], "+", 
+           RowBox[{
+            RowBox[{"plist", "[", 
+             RowBox[{"[", 
+              RowBox[{
+               RowBox[{"d", " ", "n"}], " ", "+", 
+               RowBox[{"d", 
+                RowBox[{"(", 
+                 RowBox[{"i", "-", "1"}], ")"}]}], "+", "j"}], "]"}], "]"}], 
+            "I"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"j", ",", "1", ",", "d"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", "1", ",", "n"}], "}"}]}], "]"}]}]}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"importPacking", "[", 
+      RowBox[{"d_", ",", "n_", ",", "filename_"}], "]"}], ":=", 
+     RowBox[{"importPacking", "[", 
+      RowBox[{"d", ",", "n", ",", "filename", ",", "15"}], "]"}]}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQAWIQrdJ06d6WmreOJi+074PoAnHzPyCaxeYWx1YgnbAj
+RRZEb7jvrALm+x30ANFbIuR9QfSNNoUMEF0jkVYKon0C5WpAtID93WYQzdHE
+8ANErzjJ8wtEB5Tm/QPRMXJaPNuA9J6QKCkQfaSfQxZEb7k+Xx9EX3B8BqYX
+GMl3gOg1hta9IPpB89vZIDpDcMkcMF9AbeV2kL0xyvtAtMmqFxI7gHTPrt2K
+IHrNnyBNMP3zizaIFviuWw6iWT6oV4LoHbte1ILomu3LG0F035zi/7Zr3jre
+NuljsAPSV5ruC4LolBdsQiDaIPS9KIg2YpYQA9EAloKn6A==
+  "],
+ CellLabel->
+  "In[263]:=",ExpressionUUID->"29aca637-b546-ea47-9127-4aef98763ea6"]
+},
+WindowSize->{1141.5, 641.25},
+WindowMargins->{{Automatic, -1298.25}, {Automatic, 18.75}},
+FrontEndVersion->"14.3 for Linux x86 (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ecde90b1-302a-4d70-9aa8-20ee9e2c7f83"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 3631, 93, 254, "Input",ExpressionUUID->"29aca637-b546-ea47-9127-4aef98763ea6"]
+}
+]
+*)
+
