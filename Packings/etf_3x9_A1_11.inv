@@ -1,0 +1,10 @@
+LABEL = {3x9_A1_11.inv}
+TAGS = {SIC}
+COMPONENT_DIMENSION = {1}
+NUMBER_TPS = {11}
+COHERENCE_APPROX = {0.5}
+COHERENCE_EXACT = {1/2}
+MU2_ND_APPROX = {-2.25000000000000}
+MU2_ND_EXACT = {-9/4}
+MU3_ND_APPROX = {-0.948324838748546} (* This value is for the choice of represnetative and is not an invariant of the component. *)
+MU3_ND_EXACT = {transcendental}
