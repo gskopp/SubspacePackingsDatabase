@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[      4337,        119]
-NotebookOptionsPosition[      3986,        105]
-NotebookOutlinePosition[      4380,        121]
-CellTagsIndexPosition[      4337,        118]
+NotebookDataLength[      4690,        128]
+NotebookOptionsPosition[      4330,        114]
+NotebookOutlinePosition[      4733,        130]
+CellTagsIndexPosition[      4690,        127]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -80,31 +80,40 @@ Cell[BoxData[
    RowBox[{
     RowBox[{
      RowBox[{"exportPacking", "[", 
-      RowBox[{"d_", ",", "n_", ",", "Phi_", ",", "filename_"}], "]"}], ":=", 
+      RowBox[{"Phi_", ",", "filename_"}], "]"}], ":=", 
      RowBox[{"Export", "[", 
       RowBox[{"filename", ",", 
        RowBox[{"GoSfromSO", "[", "Phi", "]"}], ",", "\"\<List\>\""}], "]"}]}],
-     ";"}], 
-   RowBox[{"(*", " ", 
+     ";"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{
-    "I", " ", "plan", " ", "to", " ", "modify", " ", "this", " ", "to", " ", 
-     "match", " ", "GoS", " ", "style", " ", "for", " ", "presentation", " ", 
-     "of", " ", 
-     RowBox[{"numbers", "."}]}], " ", "*)"}]}]}]], "Input",
+     RowBox[{"importExactTP", "[", 
+      RowBox[{"Texact_", ",", "filename_"}], "]"}], ":=", 
+     RowBox[{"arrayFromPositionMap", "[", 
+      RowBox[{"Import", "[", 
+       RowBox[{"filename", ",", "\"\<List\>\""}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"exportExactTP", "[", 
+      RowBox[{"Texact_", ",", "filename_"}], "]"}], ":=", 
+     RowBox[{"Export", "[", 
+      RowBox[{"filename", ",", 
+       RowBox[{"arrayPositionMap", "[", "Texact", "]"}], 
+       ",", "\"\<List\>\""}], "]"}]}], ";"}]}]}]], "Input",
  CellChangeTimes->CompressedData["
-1:eJwdzVsoQ3EAx/ETmj3sYZPLkrMLIpbLzlZLbBoeJBayEkvSaE8ozVKHMiUP
-bLVHW/GgjFaUw5ZblJI3pKwZI9KpNTwol4T/7zz8+vR9+qkHRjoH0yiKoslg
-sfvyjmNTZj2vScDRPMMPzKiLibeJ/RE7DTcTjcVCW46bIdetbIPRWZUDsvIh
-J2ztULBQWn87A8Vu6hMGzyTfsN05/AttinLJDnG/qycfnnjFNOSul6rguflZ
-cJlRzsGQtnYB3s+k/NAhWwkILS1ZC+PXVnQI9eu8PEKc391Tw9BPZ5ng17sG
-Sj8qXDDjrXQCRnb5SciGV6ehJzD2ZwylzDd6D2UiXrkTMmjnRVmw2vqaA5l0
-eS7MfrAzZmI8ZtFBTvJ0AQscZY8wuHXEQ3+N+gWyVldmA/FU4xP0fNdkw2Cl
-LxeOMyIaMipDIWzSLsY3iKahA0Gbd78lTJwajQoeJY298Dmp64P/b5Pxrw==
-
+1:eJwdzV0oQ2EAxvETYhe72DQsmRkiFrazleSroUgshhILabRSKI3UoWwlF0y5
+tBUXyrCiHNvyFUVyN1KWrxHp1BqKwhLe51w8/fpfPYruAUNPFEVRcjKYaT2/
+Y5mwTsspg3AwqfAHxpRcCbaIXT6TDG4EKzP51h/WQLZVXg8Dk2lmyEh7LbCu
+MZWBovJbGxRYqS/oOhVGYIOl/xcaU3OFHuJuc1syPJoVyCB7uVAA/bpn3kVa
+PgXd6uIZeG8LO6BZvOTkW5S14sWvMWMfalc5qY84vb2jgO4fQw7v94cSij7z
+RmDMW/Yo9G1zY5DxLk9Au3Por9Qd1l1r7VQZ8cIaFEMTFxsPVS2vCZCOliZC
+yYOJ1hFvrvQayAqfzmCKOecRujYPOOgoUrxApmUkroJ4opzjtUeKJNCVP5cI
+h+lYGaTTCtNhlXr+Zp1Y1rvHa5zdrfUSxwcDvAeh0nb4HNJ0wPJjVe4hsXjV
+r4ZrfZ3VkH33NMF/xYoD3A==
   "],ExpressionUUID->"29aca637-b546-ea47-9127-4aef98763ea6"]
 },
 WindowSize->{1141.5, 641.25},
-WindowMargins->{{0, Automatic}, {33, Automatic}},
+WindowMargins->{{Automatic, -1192.5}, {35.25, Automatic}},
 FrontEndVersion->"14.3 for Linux x86 (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"ecde90b1-302a-4d70-9aa8-20ee9e2c7f83"
@@ -120,7 +129,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[554, 20, 3428, 83, 269, "Input",ExpressionUUID->"29aca637-b546-ea47-9127-4aef98763ea6"]
+Cell[554, 20, 3772, 92, 289, "Input",ExpressionUUID->"29aca637-b546-ea47-9127-4aef98763ea6"]
 }
 ]
 *)

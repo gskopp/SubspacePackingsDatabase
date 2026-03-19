@@ -1,0 +1,8 @@
+LABEL = {3x6_A1_8.inv}
+TAGS = {}
+COMPONENT_DIMENSION = {1}
+NUMBER_TPS = {8}
+MU2_ND_APPROX = {0.209228010521460} (* This value is for the choice of represnetative and is not an invariant of the component. *)
+MU2_ND_EXACT = {transcendental}
+MU3_ND_APPROX = {0}
+MU3_ND_EXACT = {0}
