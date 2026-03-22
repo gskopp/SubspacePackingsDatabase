@@ -1,0 +1,105 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      3298,         97]
+NotebookOptionsPosition[      2943,         83]
+NotebookOutlinePosition[      3341,         99]
+CellTagsIndexPosition[      3298,         96]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Tests", " ", "\"\<moment equivalence\>\"", " ", "of", " ", "Phi1", " ", 
+     "and", " ", "Phi2", " ", "up", " ", "to", " ", "threshold"}], ",", " ", 
+    RowBox[{"that", " ", "is"}], ",", " ", 
+    RowBox[{
+    "whether", " ", "the", " ", "first", " ", "few", " ", "moments", " ", 
+     "are", " ", "equal"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"At", " ", "threshold"}], " ", "=", " ", 
+     RowBox[{"n", "^", "3"}]}], ",", " ", 
+    RowBox[{
+    "moment", " ", "equivalence", " ", "is", " ", "the", " ", "same", " ", 
+     "as", " ", "equivalence", " ", "of", " ", "the", " ", "set", " ", "of", " ",
+      "triple", " ", "products", " ", "as", " ", "multisets"}]}], " ", "*)"}],
+   "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "This", " ", "is", " ", "strictly", " ", "weaker", " ", "than", " ", 
+    "projective", " ", "permutation", " ", "unitary", " ", "equivalence"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"dirtyFrameEquiv", "[", 
+     RowBox[{"Phi1_", ",", "Phi2_", ",", 
+      RowBox[{"threshold_", ":", "10"}], ",", 
+      RowBox[{"tolerence_", ":", 
+       RowBox[{"10", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "6"}], ")"}]}]}]}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"moments1", ",", "moments2"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"moments1", "=", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"momentfromSO", "[", 
+           RowBox[{"Phi1", ",", "m"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"m", ",", "1", ",", "threshold"}], "}"}]}], "]"}]}], ";", 
+       RowBox[{"moments2", "=", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"momentfromSO", "[", 
+           RowBox[{"Phi2", ",", "m"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"m", ",", "1", ",", "threshold"}], "}"}]}], "]"}]}], ";", 
+       RowBox[{
+        RowBox[{"Norm", "[", 
+         RowBox[{"moments1", "-", "moments2"}], "]"}], "<", "tolerence"}]}]}],
+      "]"}]}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.9831051532414293`*^9, 3.9831055003320208`*^9}, {
+  3.983105530803721*^9, 
+  3.983105728830799*^9}},ExpressionUUID->"490541cf-0880-4e46-98d1-\
+a0e7012b87a7"]
+},
+WindowSize->{960, 496.5},
+WindowMargins->{{Automatic, -1134.75}, {135, Automatic}},
+FrontEndVersion->"14.3 for Linux x86 (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8101d9df-7736-4121-a4f6-017c20096483"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 2385, 61, 189, "Input",ExpressionUUID->"490541cf-0880-4e46-98d1-a0e7012b87a7"]
+}
+]
+*)
+
