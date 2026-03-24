@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11281,        292]
-NotebookOptionsPosition[     10838,        277]
-NotebookOutlinePosition[     11234,        293]
-CellTagsIndexPosition[     11191,        290]
+NotebookDataLength[     11325,        292]
+NotebookOptionsPosition[     10882,        277]
+NotebookOutlinePosition[     11278,        293]
+CellTagsIndexPosition[     11235,        290]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -125,7 +125,7 @@ Cell[BoxData[
         RowBox[{"roots", "=", 
          RowBox[{"Table", "[", 
           RowBox[{
-           RowBox[{"FullSimplify", "[", 
+           RowBox[{"RootReduce", "[", 
             RowBox[{"Root", "[", 
              RowBox[{"f", ",", "j"}], "]"}], "]"}], ",", 
            RowBox[{"{", 
@@ -271,8 +271,8 @@ Cell[BoxData[
    3.965504002209985*^9}, {3.9655042418341312`*^9, 3.9655043616451902`*^9}, {
    3.965504419100168*^9, 3.965504427092987*^9}, {3.970786256039034*^9, 
    3.970786269069891*^9}, {3.9831956758283854`*^9, 3.983195688110503*^9}, {
-   3.983195720141967*^9, 
-   3.983195730452153*^9}},ExpressionUUID->"fa220d3a-fab0-48de-bc3e-\
+   3.983195720141967*^9, 3.983195730452153*^9}, {3.983209923908544*^9, 
+   3.983209925875646*^9}},ExpressionUUID->"fa220d3a-fab0-48de-bc3e-\
 9b234c8de72b"]
 },
 WindowSize->{960, 519},
@@ -293,7 +293,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 878, 22, 89, "Input",ExpressionUUID->"ebdcd174-1376-46bb-9006-ae5e88c8fb49"],
-Cell[1439, 44, 9395, 231, 536, "Input",ExpressionUUID->"fa220d3a-fab0-48de-bc3e-9b234c8de72b"]
+Cell[1439, 44, 9439, 231, 536, "Input",ExpressionUUID->"fa220d3a-fab0-48de-bc3e-9b234c8de72b"]
 }
 ]
 *)

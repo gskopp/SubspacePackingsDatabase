@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14643,        369]
-NotebookOptionsPosition[     14192,        354]
-NotebookOutlinePosition[     14595,        370]
-CellTagsIndexPosition[     14552,        367]
+NotebookDataLength[     16819,        426]
+NotebookOptionsPosition[     16368,        411]
+NotebookOutlinePosition[     16771,        427]
+CellTagsIndexPosition[     16728,        424]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -314,7 +314,61 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"j", ",", "1", ",", "d"}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"i", ",", "1", ",", "n"}], "}"}]}], "]"}]}], 
+        RowBox[{"i", ",", "1", ",", "n"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Convert", " ", "between", " ", "triple", " ", "product", " ", "tensor", " ",
+      "and", " ", "one", " ", "slice", " ", "of", " ", "the", " ", "triple", " ",
+      "product", " ", "tensor"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"TPslicefromTP", "[", 
+      RowBox[{"T_", ",", 
+       RowBox[{"i_", ":", "1"}]}], "]"}], ":=", 
+     RowBox[{"T", "[", 
+      RowBox[{"[", "i", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"TPfromTPslice", "[", 
+      RowBox[{"Tslice_", ",", 
+       RowBox[{"i_", ":", "1"}]}], "]"}], ":=", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Tslice", "[", 
+         RowBox[{"[", 
+          RowBox[{"i", ",", "i"}], "]"}], "]"}], 
+        RowBox[{"Tslice", "[", 
+         RowBox[{"[", 
+          RowBox[{"j", ",", "k"}], "]"}], "]"}], 
+        RowBox[{"Tslice", "[", 
+         RowBox[{"[", 
+          RowBox[{"k", ",", "l"}], "]"}], "]"}], 
+        RowBox[{
+         RowBox[{"Tslice", "[", 
+          RowBox[{"[", 
+           RowBox[{"l", ",", "j"}], "]"}], "]"}], "/", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Tslice", "[", 
+            RowBox[{"[", 
+             RowBox[{"i", ",", "j"}], "]"}], "]"}], 
+           RowBox[{"Tslice", "[", 
+            RowBox[{"[", 
+             RowBox[{"i", ",", "k"}], "]"}], "]"}], 
+           RowBox[{"Tslice", "[", 
+            RowBox[{"[", 
+             RowBox[{"i", ",", "l"}], "]"}], "]"}]}], ")"}]}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"j", ",", "1", ",", 
+         RowBox[{"Length", "[", "Tslice", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "1", ",", 
+         RowBox[{"Length", "[", "Tslice", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"l", ",", "1", ",", 
+         RowBox[{"Length", "[", "Tslice", "]"}]}], "}"}]}], "]"}]}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.965428033609234*^9, 3.965428123438734*^9}, {
    3.965428184631117*^9, 3.965428212438405*^9}, {3.9654282964949417`*^9, 
@@ -349,11 +403,14 @@ Cell[BoxData[
    3.982625637003096*^9, 3.9826256772357893`*^9}, {3.982625712827703*^9, 
    3.982625736770528*^9}, {3.982626155692813*^9, 3.982626173332068*^9}, {
    3.9826263151361237`*^9, 3.982626328343563*^9}, {3.982868242110382*^9, 
-   3.98286824364299*^9}},ExpressionUUID->"baaa13d8-6bc6-4c5c-ae0e-\
-65a3ccd68dc3"]
+   3.98286824364299*^9}, {3.983200345978059*^9, 3.98320050772738*^9}, {
+   3.983200738944274*^9, 3.9832007488896103`*^9}, {3.983200785041728*^9, 
+   3.9832009276243362`*^9}, {3.983225894268322*^9, 3.983225906856222*^9}},
+ CellLabel->
+  "In[302]:=",ExpressionUUID->"baaa13d8-6bc6-4c5c-ae0e-65a3ccd68dc3"]
 },
 WindowSize->{1142.25, 641.25},
-WindowMargins->{{Automatic, -933.75}, {55.5, Automatic}},
+WindowMargins->{{126.75, Automatic}, {71.25, Automatic}},
 FrontEndVersion->"14.3 for Linux x86 (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"b883db42-13a3-4063-bca8-c2143a1be471"
@@ -370,7 +427,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 835, 20, 49, "Input",ExpressionUUID->"878b4a17-8309-4a7d-a9f7-20a8b313710d"],
-Cell[1396, 42, 12792, 310, 734, "Input",ExpressionUUID->"baaa13d8-6bc6-4c5c-ae0e-65a3ccd68dc3"]
+Cell[1396, 42, 14968, 367, 815, "Input",ExpressionUUID->"baaa13d8-6bc6-4c5c-ae0e-65a3ccd68dc3"]
 }
 ]
 *)
