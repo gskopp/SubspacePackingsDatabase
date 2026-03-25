@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[      5927,        142]
-NotebookOptionsPosition[      5568,        128]
-NotebookOutlinePosition[      5969,        144]
-CellTagsIndexPosition[      5926,        141]
+NotebookDataLength[      6441,        159]
+NotebookOptionsPosition[      6087,        145]
+NotebookOutlinePosition[      6483,        161]
+CellTagsIndexPosition[      6440,        158]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -34,8 +34,8 @@ Cell[BoxData[
      RowBox[{"FileNameJoin", "[", 
       RowBox[{
        RowBox[{"ParentDirectory", "[", 
-        RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
-       ",", "\"\<Packings\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+        RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ",", 
+       "\"\<Packings\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
     "Set", " ", "as", " ", "present", " ", "working", " ", "directory"}], " ",
@@ -46,7 +46,9 @@ Cell[BoxData[
    RowBox[{"(*", " ", 
     RowBox[{
     "Function", " ", "to", " ", "import", " ", "Game", " ", "of", " ", 
-     "Sloanes", " ", "formatted", " ", "text", " ", "file", " ", "of", " ", 
+     "Sloanes", " ", "formatted", " ", 
+     RowBox[{"(", 
+      RowBox[{".", "gos"}], ")"}], " ", "text", " ", "file", " ", "of", " ", 
      "packing"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
@@ -76,7 +78,12 @@ Cell[BoxData[
         RowBox[{"SOfromGoS", "[", 
          RowBox[{"plist", ",", 
           RowBox[{"{", 
-           RowBox[{"d", ",", "n"}], "}"}]}], "]"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+           RowBox[{"d", ",", "n"}], "}"}]}], "]"}]}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Export", " ", ".", "gos"}], " ", "file"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"exportPacking", "[", 
@@ -85,21 +92,30 @@ Cell[BoxData[
       RowBox[{"filename", ",", 
        RowBox[{"GoSfromSO", "[", "Phi", "]"}], ",", "\"\<List\>\""}], "]"}]}],
      ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Import", " ", ".", "exa"}], " ", "file"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"importExactTP", "[", "filename_", "]"}], ":=", 
      RowBox[{"arrayFromPositionMap", "[", 
       RowBox[{"ToExpression", "/@", 
        RowBox[{"Import", "[", 
-        RowBox[{"filename", ",", "\"\<List\>\""}], "]"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+        RowBox[{"filename", ",", "\"\<List\>\""}], "]"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Export", " ", ".", "exa"}], " ", "file"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"exportExactTP", "[", 
       RowBox[{"Texact_", ",", "filename_"}], "]"}], ":=", 
      RowBox[{"Export", "[", 
       RowBox[{"filename", ",", 
-       RowBox[{"arrayPositionMap", "[", "Texact", "]"}], 
-       ",", "\"\<List\>\""}], "]"}]}], ";"}]}]}]], "Input",
+       RowBox[{"arrayPositionMap", "[", "Texact", "]"}], ",", 
+       "\"\<List\>\""}], "]"}]}], ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9576962465783863`*^9, 3.957696249372095*^9}, {
    3.957696481721611*^9, 3.957696582819826*^9}, {3.9576967471475067`*^9, 
    3.9576968021210556`*^9}, {3.9576970940408173`*^9, 3.957697128979578*^9}, {
@@ -123,12 +139,13 @@ Cell[BoxData[
    3.98288731052078*^9}, {3.982887482981893*^9, 3.982887581717249*^9}, 
    3.983055303717834*^9, 3.9830558452202682`*^9, {3.983055889876054*^9, 
    3.9830559134437113`*^9}, {3.983055952389885*^9, 3.983055952948832*^9}, {
-   3.98305610514643*^9, 3.9830561083293133`*^9}},
- CellLabel->"In[77]:=",ExpressionUUID->"29aca637-b546-ea47-9127-4aef98763ea6"]
+   3.98305610514643*^9, 3.9830561083293133`*^9}, {3.983454990301168*^9, 
+   3.983455073556012*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"29aca637-b546-ea47-9127-4aef98763ea6"]
 },
-WindowSize->{1141.5, 641.25},
-WindowMargins->{{Automatic, -40.5}, {71.25, Automatic}},
-FrontEndVersion->"14.3 for Linux x86 (64-bit) (July 8, 2025)",
+WindowSize->{1259.25, 854.25},
+WindowMargins->{{339., 321.75}, {Automatic, 111}},
+FrontEndVersion->"12.3 for Linux x86 (64-bit) (July 9, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"ecde90b1-302a-4d70-9aa8-20ee9e2c7f83"
 ]
@@ -143,7 +160,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[554, 20, 5010, 106, 341, "Input",ExpressionUUID->"29aca637-b546-ea47-9127-4aef98763ea6"]
+Cell[554, 20, 5529, 123, 360, "Input",ExpressionUUID->"29aca637-b546-ea47-9127-4aef98763ea6"]
 }
 ]
 *)
