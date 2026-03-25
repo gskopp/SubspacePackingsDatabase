@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11325,        292]
-NotebookOptionsPosition[     10882,        277]
-NotebookOutlinePosition[     11278,        293]
-CellTagsIndexPosition[     11235,        290]
+NotebookDataLength[     11440,        295]
+NotebookOptionsPosition[     10993,        280]
+NotebookOutlinePosition[     11393,        296]
+CellTagsIndexPosition[     11350,        293]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -45,7 +45,9 @@ ae5e88c8fb49"],
 Cell[BoxData[
  RowBox[{
   RowBox[{"(*", " ", 
-   RowBox[{"Standard", " ", "shortcuts"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+   "Standard", " ", "shortcuts", " ", "for", " ", "displaying", " ", 
+    "matrices"}], " ", "*)"}], "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{"mf", "=", "MatrixForm"}], ";", 
@@ -272,12 +274,13 @@ Cell[BoxData[
    3.965504419100168*^9, 3.965504427092987*^9}, {3.970786256039034*^9, 
    3.970786269069891*^9}, {3.9831956758283854`*^9, 3.983195688110503*^9}, {
    3.983195720141967*^9, 3.983195730452153*^9}, {3.983209923908544*^9, 
-   3.983209925875646*^9}},ExpressionUUID->"fa220d3a-fab0-48de-bc3e-\
+   3.983209925875646*^9}, {3.9834560691864033`*^9, 
+   3.9834560800280056`*^9}},ExpressionUUID->"fa220d3a-fab0-48de-bc3e-\
 9b234c8de72b"]
 },
-WindowSize->{960, 519},
-WindowMargins->{{Automatic, 128.25}, {Automatic, 17.25}},
-FrontEndVersion->"14.3 for Linux x86 (64-bit) (July 8, 2025)",
+WindowSize->{949, 519},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"14.2 for Microsoft Windows (64-bit) (December 26, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"3ee9827a-cb47-4465-a482-df79516461fc"
 ]
@@ -292,8 +295,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 878, 22, 89, "Input",ExpressionUUID->"ebdcd174-1376-46bb-9006-ae5e88c8fb49"],
-Cell[1439, 44, 9439, 231, 536, "Input",ExpressionUUID->"fa220d3a-fab0-48de-bc3e-9b234c8de72b"]
+Cell[558, 20, 878, 22, 85, "Input",ExpressionUUID->"ebdcd174-1376-46bb-9006-ae5e88c8fb49"],
+Cell[1439, 44, 9550, 234, 503, "Input",ExpressionUUID->"fa220d3a-fab0-48de-bc3e-9b234c8de72b"]
 }
 ]
 *)
