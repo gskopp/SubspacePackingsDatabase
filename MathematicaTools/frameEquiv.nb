@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[      6245,        164]
-NotebookOptionsPosition[      5889,        150]
-NotebookOutlinePosition[      6287,        166]
-CellTagsIndexPosition[      6244,        163]
+NotebookDataLength[      6205,        162]
+NotebookOptionsPosition[      5853,        148]
+NotebookOutlinePosition[      6247,        164]
+CellTagsIndexPosition[      6204,        161]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -37,9 +37,9 @@ Cell[BoxData[
      RowBox[{"n", "^", "3"}]}], ",", " ", 
     RowBox[{
     "moment", " ", "equivalence", " ", "is", " ", "the", " ", "same", " ", 
-     "as", " ", "equivalence", " ", "of", " ", "the", " ", "set", " ", "of", 
-     " ", "triple", " ", "products", " ", "as", " ", "multisets"}]}], " ", 
-   "*)"}], "\[IndentingNewLine]", 
+     "as", " ", "equivalence", " ", "of", " ", "the", " ", "set", " ", "of", " ",
+      "triple", " ", "products", " ", "as", " ", "multisets"}]}], " ", "*)"}],
+   "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{
    "This", " ", "is", " ", "strictly", " ", "weaker", " ", "than", " ", 
@@ -84,8 +84,8 @@ Cell[BoxData[
     RowBox[{
     "Tests", " ", "equivalence", " ", "of", " ", "tests_", " ", "random", " ",
       "basic", " ", "S_n", " ", "invariants", " ", "of", " ", "degree", " ", 
-     "degree_", " ", "on", " ", "an", " ", "index", " ", "set", " ", "of", 
-     " ", "size", " ", "breadth_"}], " ", "*)"}], "\[IndentingNewLine]", 
+     "degree_", " ", "on", " ", "an", " ", "index", " ", "set", " ", "of", " ",
+      "size", " ", "breadth_"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
      RowBox[{
@@ -101,14 +101,11 @@ Cell[BoxData[
      RowBox[{
      "rigorous", " ", "bounds", " ", "are", " ", "not", " ", "known", " ", 
       "here"}]}], " ", "*)"}], " ", "\[IndentingNewLine]", 
-   RowBox[{"(*", " ", 
-    RowBox[{"NOT", " ", 
-     RowBox[{"TESTED", "!!"}]}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"randomInvariantFrameEquiv", "[", 
       RowBox[{"Phi1_", ",", "Phi2_", ",", 
-       RowBox[{"breadth_", ":", "6"}], ",", 
+       RowBox[{"breadth_", ":", "3"}], ",", 
        RowBox[{"degree_", ":", "12"}], ",", 
        RowBox[{"tests_", ":", "10"}], ",", 
        RowBox[{"tolerence_", ":", 
@@ -136,21 +133,22 @@ Cell[BoxData[
          RowBox[{"j", ",", "1", ",", "tests"}], "}"}]}], "]"}]}]}], 
     ";"}]}]}]], "Input",
  CellChangeTimes->{{3.9831051532414293`*^9, 3.9831055003320208`*^9}, {
-  3.983105530803721*^9, 3.983105728830799*^9}, {3.984060884754546*^9, 
-  3.9840609631858587`*^9}, {3.984063432076922*^9, 3.984063642845757*^9}, {
-  3.9840636945097237`*^9, 3.9840637427504883`*^9}, {3.984063820390841*^9, 
-  3.984063844679397*^9}, {3.984063883135727*^9, 3.984063883399556*^9}, {
-  3.984063969448406*^9, 3.984063979296167*^9}, {3.984064030472879*^9, 
-  3.984064089601411*^9}, {3.984064176394081*^9, 3.984064233378642*^9}, {
-  3.984064279035141*^9, 3.984064299019218*^9}, {3.984064330467404*^9, 
-  3.9840643394428577`*^9}, {3.984064411510254*^9, 3.984064473436513*^9}, {
-  3.984064706118086*^9, 
-  3.984064743406433*^9}},ExpressionUUID->"490541cf-0880-4e46-98d1-\
+   3.983105530803721*^9, 3.983105728830799*^9}, {3.984060884754546*^9, 
+   3.9840609631858587`*^9}, {3.984063432076922*^9, 3.984063642845757*^9}, {
+   3.9840636945097237`*^9, 3.9840637427504883`*^9}, {3.984063820390841*^9, 
+   3.984063844679397*^9}, {3.984063883135727*^9, 3.984063883399556*^9}, {
+   3.984063969448406*^9, 3.984063979296167*^9}, {3.984064030472879*^9, 
+   3.984064089601411*^9}, {3.984064176394081*^9, 3.984064233378642*^9}, {
+   3.984064279035141*^9, 3.984064299019218*^9}, {3.984064330467404*^9, 
+   3.9840643394428577`*^9}, {3.984064411510254*^9, 3.984064473436513*^9}, {
+   3.984064706118086*^9, 3.984064743406433*^9}, 3.9840717411402817`*^9, {
+   3.98407177924539*^9, 
+   3.984071779396377*^9}},ExpressionUUID->"490541cf-0880-4e46-98d1-\
 a0e7012b87a7"]
 },
 WindowSize->{1362, 705},
-WindowMargins->{{Automatic, -1601.25}, {97.5, Automatic}},
-FrontEndVersion->"12.3 for Linux x86 (64-bit) (July 9, 2021)",
+WindowMargins->{{Automatic, -97.5}, {-27, Automatic}},
+FrontEndVersion->"14.3 for Linux x86 (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"8101d9df-7736-4121-a4f6-017c20096483"
 ]
@@ -165,7 +163,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[554, 20, 5331, 128, 257, "Input",ExpressionUUID->"490541cf-0880-4e46-98d1-a0e7012b87a7"]
+Cell[554, 20, 5295, 126, 229, "Input",ExpressionUUID->"490541cf-0880-4e46-98d1-a0e7012b87a7"]
 }
 ]
 *)
