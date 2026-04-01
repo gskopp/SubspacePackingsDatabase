@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[      5216,        158]
-NotebookOptionsPosition[      4763,        143]
-NotebookOutlinePosition[      5165,        159]
-CellTagsIndexPosition[      5122,        156]
+NotebookDataLength[      9955,        279]
+NotebookOptionsPosition[      9503,        264]
+NotebookOutlinePosition[      9904,        280]
+CellTagsIndexPosition[      9861,        277]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -63,9 +63,10 @@ Cell[BoxData[
    RowBox[{"(*", " ", 
     RowBox[{
      RowBox[{
-     "Number", " ", "of", " ", "distict", " ", "triple", " ", "products"}], ",",
-      " ", 
-     RowBox[{"including", " ", "degenerate", " ", "ones"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+     "Number", " ", "of", " ", "distict", " ", "triple", " ", "products"}], 
+     ",", " ", 
+     RowBox[{"including", " ", "degenerate", " ", "ones"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"numberTPfromSO", "[", 
@@ -136,14 +137,134 @@ Cell[BoxData[
            RowBox[{"j", ",", "1", ",", "n"}], "}"}], ",", 
           RowBox[{"{", 
            RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}]}]}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Compute", " ", "a", " ", "general", " ", "m"}], "-", 
+     RowBox[{
+     "product", " ", "with", " ", "index", " ", "set", " ", "Indices_"}]}], 
+    " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"mproductfromGM", "[", 
+      RowBox[{"G_", ",", "Indices_"}], "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"m", ",", "wrapIndices"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"m", "=", 
+         RowBox[{"Length", "[", "Indices", "]"}]}], ";", 
+        RowBox[{"wrapIndices", "=", 
+         RowBox[{"Append", "[", 
+          RowBox[{"Indices", ",", 
+           RowBox[{"Indices", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], ";", 
+        RowBox[{"Product", "[", 
+         RowBox[{
+          RowBox[{"G", "[", 
+           RowBox[{"[", 
+            RowBox[{
+             RowBox[{"wrapIndices", "[", 
+              RowBox[{"[", "i", "]"}], "]"}], ",", 
+             RowBox[{"wrapIndices", "[", 
+              RowBox[{"[", 
+               RowBox[{"i", "+", "1"}], "]"}], "]"}]}], "]"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", "1", ",", "m"}], "}"}]}], "]"}]}]}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"mproductfromSO", "[", 
+      RowBox[{"Phi_", ",", "Indices_"}], "]"}], ":=", 
+     RowBox[{"mproductfromSO", "[", 
+      RowBox[{
+       RowBox[{"GMfromSO", "[", "Phi", "]"}], ",", "Indices"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{
+     "Compute", " ", "the", " ", "sum", " ", "of", " ", "all", " ", "m"}], 
+     "-", 
+     RowBox[{
+     "products", " ", "with", " ", "index", " ", "set", " ", "of", " ", 
+      "shape", " ", "Indices_"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"For", " ", "example"}], ",", " ", 
+     RowBox[{"the", " ", "index", " ", "set", " ", 
+      RowBox[{"{", 
+       RowBox[{"a", ",", "b", ",", "c", ",", "a", ",", "b", ",", "c"}], "}"}],
+       " ", "yields", " ", "the", " ", "second", " ", "moment", " ", "of", 
+      " ", "the", " ", "triple", " ", "products"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{
+     "I", " ", "think", " ", "these", " ", "generate", " ", "all", " ", 
+      "S_n"}], "-", 
+     RowBox[{"invariants", " ", "[", 
+      RowBox[{
+       RowBox[{"i", ".", "e", "."}], ",", " ", 
+       RowBox[{
+       "projective", " ", "permutation", " ", "unitary", " ", 
+        "invariants"}]}], "]"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"generalSnInvariantfromGM", "[", 
+      RowBox[{"G_", ",", "Indices_"}], "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"IndexSet", ",", "n", ",", "k"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"IndexSet", "=", 
+         RowBox[{"DeleteDuplicates", "[", "Indices", "]"}]}], ";", 
+        RowBox[{"n", "=", 
+         RowBox[{"Length", "[", "G", "]"}]}], ";", 
+        RowBox[{"k", "=", 
+         RowBox[{"Length", "[", "IndexSet", "]"}]}], ";", 
+        RowBox[{"Plus", "@@", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"mproductfromGM", "[", 
+             RowBox[{"G", ",", "#"}], "]"}], "&"}], "/@", 
+           RowBox[{"(", 
+            RowBox[{"IndexSet", "/.", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Thread", "[", 
+                 RowBox[{"Indices", "->", "#"}], "]"}], "&"}], "/@", 
+               RowBox[{"Tuples", "[", 
+                RowBox[{
+                 RowBox[{"Range", "[", "n", "]"}], ",", "k"}], "]"}]}], 
+              ")"}]}], ")"}]}], ")"}]}]}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"generalSnInvariantfromSO", "[", 
+      RowBox[{"Phi_", ",", "Indices_"}], "]"}], ":=", 
+     RowBox[{"generalSnInvariantfromGM", "[", 
+      RowBox[{
+       RowBox[{"GMfromSO", "[", "Phi", "]"}], ",", "Indices"}], "]"}]}], 
     ";"}]}]}]], "Input",
- CellChangeTimes->{{3.9828683075202723`*^9, 
-  3.982868686488283*^9}},ExpressionUUID->"fba39cfb-88d2-4f8d-9994-\
+ CellChangeTimes->{{3.9828683075202723`*^9, 3.982868686488283*^9}, {
+  3.984061031763249*^9, 3.984061059993718*^9}, {3.984061270811294*^9, 
+  3.984061441477565*^9}, {3.9840617627121277`*^9, 3.984061787224408*^9}, {
+  3.98406195910583*^9, 3.984062171715252*^9}, {3.984062202684519*^9, 
+  3.984062214670216*^9}, {3.984062251284437*^9, 3.984062256404501*^9}, {
+  3.984062322149022*^9, 3.984062533245428*^9}, {3.98406258587747*^9, 
+  3.984062648886907*^9}, {3.984063048860587*^9, 3.984063177666953*^9}, {
+  3.984063862479298*^9, 3.9840638757035522`*^9}, {3.984063985686988*^9, 
+  3.984063996880433*^9}, {3.984064970299718*^9, 
+  3.984065123065489*^9}},ExpressionUUID->"fba39cfb-88d2-4f8d-9994-\
 52f3529b2c4d"]
 },
 WindowSize->{1142.25, 662.25},
-WindowMargins->{{Automatic, -1215}, {17.25, Automatic}},
-FrontEndVersion->"14.3 for Linux x86 (64-bit) (July 8, 2025)",
+WindowMargins->{{Automatic, 162}, {Automatic, 138.75}},
+FrontEndVersion->"12.3 for Linux x86 (64-bit) (July 9, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"ed9831ed-105c-4b08-acd0-1a65275af71b"
 ]
@@ -158,8 +279,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[554, 20, 482, 12, 49, "Input",ExpressionUUID->"474c95d0-477e-40c3-87aa-c668eb635352"],
-Cell[1039, 34, 3720, 107, 217, "Input",ExpressionUUID->"fba39cfb-88d2-4f8d-9994-52f3529b2c4d"]
+Cell[554, 20, 482, 12, 51, "Input",ExpressionUUID->"474c95d0-477e-40c3-87aa-c668eb635352"],
+Cell[1039, 34, 8460, 228, 484, "Input",ExpressionUUID->"fba39cfb-88d2-4f8d-9994-52f3529b2c4d"]
 }
 ]
 *)
