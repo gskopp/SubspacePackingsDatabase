@@ -1,9 +1,5 @@
 (* ::Package:: *)
 
-(* ::Input:: *)
-(**)
-
-
 Clear[PhiVarGen];
 (* Normalize columns of a matrix *)
 normalizeCols[m_] := Map[#/Norm[#] &, m];
