@@ -11,7 +11,7 @@ We provide a table of ETFs in small dimension.
             <th scope="col">n</th>
             <th scope="col">label</th>
             <th scope="col">conjugate</th>
-            <th scope="col">$`[F^{\rm trip}:\mathbb{Q}]`$</th>
+            <th scope="col">$[F^{\rm trip}:\mathbb{Q}]$</th>
             <th scope="col">.inv file</th>
             <th scope="col">.gos file</th>
             <th scope="col">.exa file</th>
