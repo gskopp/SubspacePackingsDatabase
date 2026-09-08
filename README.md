@@ -1,7 +1,7 @@
 # Subspace Packings Database
 Under construction.
 
-We provide a table of some ETFs in small dimension.
+We provide a table of some equiangular tight frames (ETFs) in small dimension.
 
 <div class="table-responsive my-table">
   <table class="table">
@@ -42,6 +42,10 @@ We provide a table of some ETFs in small dimension.
       <tr><td>7</td><td>15</td><td>7x15_38b</td><td>38a</td><td>36</td><td><a href="Packings/etf_7x15_38b.inv">File</a></td><td><a href="Packings/etf_7x15_38b.gos">File</a></td><td><a href="Packings/etf_7x15_38b.exa">File</a></td></tr>
       <tr><td>7</td><td>15</td><td>7x15_104a</td><td>104b</td><td>756</td><td><a href="Packings/etf_7x15_104a.inv">File</a></td><td><a href="Packings/etf_7x15_104a.gos">File</a></td><td><a href="Packings/etf_7x15_104a.exa">File</a></td></tr>
       <tr><td>7</td><td>15</td><td>7x15_104b</td><td>104a</td><td>756</td><td><a href="Packings/etf_7x15_104b.inv">File</a></td><td><a href="Packings/etf_7x15_104b.gos">File</a></td><td><a href="Packings/etf_7x15_104b.exa">File</a></td></tr>
+      <tr><td>7</td><td>28</td><td>7x28_4a</td><td>self</td><td>1</td><td><a href="Packings/etf_7x28_4a.inv">File</a></td><td><a href="Packings/etf_7x28_4a.gos">File</a></td><td><a href="Packings/etf_7x28_4a.exa">File</a></td></tr>
+      <tr><td>7</td><td>49</td><td>7x49_129a</td><td>self</td><td>24</td><td><a href="Packings/etf_7x49_129a.inv">File</a></td><td><a href="Packings/etf_7x49_129a.gos">File</a></td><td><a href="Packings/etf_7x49_129a.exa">File</a></td></tr>
+      <tr><td>7</td><td>49</td><td>7x49_262a</td><td>262b</td><td>48</td><td><a href="Packings/etf_7x49_262a.inv">File</a></td><td><a href="Packings/etf_7x49_262a.gos">File</a></td><td><a href="Packings/etf_7x49_262a.exa">File</a></td></tr>
+      <tr><td>7</td><td>49</td><td>7x49_262a</td><td>262a</td><td>48</td><td><a href="Packings/etf_7x49_262b.inv">File</a></td><td><a href="Packings/etf_7x49_262b.gos">File</a></td><td><a href="Packings/etf_7x49_262b.exa">File</a></td></tr>
     </tbody>
   </table>
 </div>
