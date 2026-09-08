@@ -20,7 +20,7 @@ We provide a table of ETFs in small dimension. This table includes new ETFs foun
     <tbody>
       <tr><td>2</td><td>4</td><td>2x4_4a</td><td>self</td><td>2</td><td><a href="Packings/etf_2x4_4a.inv">File</a></td><td><a href="Packings/etf_2x4_4a.gos">File</a></td><td><a href="Packings/etf_2x4_4a.exa">File</a></td></tr>
       <tr><td>3</td><td>7</td><td>3x7_6a</td><td>self</td><td>2</td><td><a href="Packings/etf_3x7_6a.inv">File</a></td><td><a href="Packings/etf_3x7_6a.gos">File</a></td><td><a href="Packings/etf_3x7_6a.exa">File</a></td></tr>
-      <tr><td>4</td><td>7</td><td>3x7_6a</td><td>self</td><td>2</td><td><a href="Packings/etf_4x7_6a.inv">File</a></td><td><a href="Packings/etf_4x7_6a.gos">File</a></td><td><a href="Packings/etf_4x7_6a.exa">File</a></td></tr>
+      <tr><td>4</td><td>7</td><td>4x7_6a</td><td>self</td><td>2</td><td><a href="Packings/etf_4x7_6a.inv">File</a></td><td><a href="Packings/etf_4x7_6a.gos">File</a></td><td><a href="Packings/etf_4x7_6a.exa">File</a></td></tr>
       <tr><td>4</td><td>8</td><td>4x8_4a</td><td>self</td><td>2</td><td><a href="Packings/etf_4x8_4a.inv">File</a></td><td><a href="Packings/etf_4x8_4a.gos">File</a></td><td><a href="Packings/etf_4x8_4a.exa">File</a></td></tr>
       <tr><td>4</td><td>13</td><td>4x13_14a</td><td>self</td><td>4</td><td><a href="Packings/etf_4x13_14a.inv">File</a></td><td><a href="Packings/etf_4x13_14a.gos">File</a></td><td><a href="Packings/etf_4x13_14a.exa">File</a></td></tr>
       <tr><td>4</td><td>16</td><td>4x16_19a</td><td>self</td><td>8</td><td><a href="Packings/etf_4x16_19a.inv">File</a></td><td><a href="Packings/etf_4x16_19a.gos">File</a></td><td><a href="Packings/etf_4x16_19a.exa">File</a></td></tr>
@@ -29,6 +29,11 @@ We provide a table of ETFs in small dimension. This table includes new ETFs foun
       <tr><td>5</td><td>21</td><td>5x21_13a</td><td>self</td><td>2</td><td><a href="Packings/etf_5x21_13a.inv">File</a></td><td><a href="Packings/etf_5x21_13a.gos">File</a></td><td><a href="Packings/etf_5x21_13a.exa">File</a></td></tr>
       <tr><td>5</td><td>25</td><td>5x25_74a</td><td>74b</td><td>32</td><td><a href="Packings/etf_5x25_74a.inv">File</a></td><td><a href="Packings/etf_5x25_74a.gos">File</a></td><td><a href="Packings/etf_5x25_74a.exa">File</a></td></tr>
       <tr><td>5</td><td>25</td><td>5x25_74b</td><td>74a</td><td>32</td><td><a href="Packings/etf_5x25_74b.inv">File</a></td><td><a href="Packings/etf_5x25_74b.gos">File</a></td><td><a href="Packings/etf_5x25_74b.exa">File</a></td></tr>
+      <tr><td>6</td><td>11</td><td>6x11_6a</td><td>self</td><td>2</td><td><a href="Packings/etf_6x11_6a.inv">File</a></td><td><a href="Packings/etf_6x11_6a.gos">File</a></td><td><a href="Packings/etf_6x11_24a.exa">File</a></td></tr>
+      <tr><td>6</td><td>11</td><td>6x11_24a</td><td>self</td><td>8</td><td><a href="Packings/etf_6x11_24a.inv">File</a></td><td><a href="Packings/etf_6x11_24a.gos">File</a></td><td><a href="Packings/etf_6x11_24a.exa">File</a></td></tr>
+      <tr><td>6</td><td>31</td><td>6x31_62a</td><td>self</td><td>10</td><td><a href="Packings/etf_6x31_62a.inv">File</a></td><td><a href="Packings/etf_6x31_62a.gos">File</a></td><td><a href="Packings/etf_6x31_62a.exa">File</a></td></tr>
+      <tr><td>6</td><td>36</td><td>6x36_112a</td><td>112b</td><td>24</td><td><a href="Packings/etf_6x36_112a.inv">File</a></td><td><a href="Packings/etf_6x36_112a.gos">File</a></td><td><a href="Packings/etf_6x36_112a.exa">File</a></td></tr>
+      <tr><td>6</td><td>36</td><td>6x36_112b</td><td>112a</td><td>24</td><td><a href="Packings/etf_6x36_112b.inv">File</a></td><td><a href="Packings/etf_6x36_112b.gos">File</a></td><td><a href="Packings/etf_6x36_112b.exa">File</a></td></tr>
     </tbody>
   </table>
 </div>
