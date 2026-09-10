@@ -19,9 +19,9 @@ We provide a table of some equiangular tight frames (ETFs) in small dimension.
     </thead>
     <tbody>
       <tr><td>2</td><td>4</td><td>2x4_4a</td><td>self</td><td>2</td><td><a href="Packings/etf_2x4_4a.inv">File</a></td><td><a href="Packings/etf_2x4_4a.gos">File</a></td><td><a href="Packings/etf_2x4_4a.exa">File</a></td></tr>
-      <tr><td>3</td><td>6</td><td>3x6_8A1</td><td></td><td>$\infty$</td><td><a href="Packings/etf_3x6_8A1.inv">File</a></td><td><a href="Packings/etf_3x6_8A1.gos">File</a></td></tr>
+      <tr><td>3</td><td>6</td><td>3x6_8A1</td><td></td><td>$\infty$</td><td><a href="Packings/etf_3x6_8A1.inv">File</a></td><td><a href="Packings/etf_3x6_8A1.gos">File</a></td><td></td></tr>
       <tr><td>3</td><td>7</td><td>3x7_6a</td><td>self</td><td>2</td><td><a href="Packings/etf_3x7_6a.inv">File</a></td><td><a href="Packings/etf_3x7_6a.gos">File</a></td><td><a href="Packings/etf_3x7_6a.exa">File</a></td></tr>
-      <tr><td>3</td><td>9</td><td>3x9_11A1</td><td></td><td>$\infty$</td><td><a href="Packings/etf_3x9_11A1.inv">File</a></td><td><a href="Packings/etf_3x9_11A1.gos">File</a></td></tr>
+      <tr><td>3</td><td>9</td><td>3x9_11A1</td><td></td><td>$\infty$</td><td><a href="Packings/etf_3x9_11A1.inv">File</a></td><td><a href="Packings/etf_3x9_11A1.gos">File</a></td><td></td></tr>
       <tr><td>4</td><td>7</td><td>4x7_6a</td><td>self</td><td>2</td><td><a href="Packings/etf_4x7_6a.inv">File</a></td><td><a href="Packings/etf_4x7_6a.gos">File</a></td><td><a href="Packings/etf_4x7_6a.exa">File</a></td></tr>
       <tr><td>4</td><td>8</td><td>4x8_4a</td><td>self</td><td>2</td><td><a href="Packings/etf_4x8_4a.inv">File</a></td><td><a href="Packings/etf_4x8_4a.gos">File</a></td><td><a href="Packings/etf_4x8_4a.exa">File</a></td></tr>
       <tr><td>4</td><td>13</td><td>4x13_14a</td><td>self</td><td>4</td><td><a href="Packings/etf_4x13_14a.inv">File</a></td><td><a href="Packings/etf_4x13_14a.gos">File</a></td><td><a href="Packings/etf_4x13_14a.exa">File</a></td></tr>
